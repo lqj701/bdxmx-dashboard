@@ -1,0 +1,22 @@
+@import '../../styles/global.scss';
+.header-nav {
+  display: flex;
+  float: right;
+  margin-right: 40px;
+  .dropdown-title {
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    padding: 0 10px;
+    transition: $transition;
+    a {
+      color: $font-color-normal;
+      padding: 20px 10px;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, .025);
+      cursor: pointer;
+    }
+  }
+}
