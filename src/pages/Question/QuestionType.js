@@ -99,6 +99,11 @@ export const ChoiceQuestion = ({ getFieldDecorator, initValue = {} }) => {
           </Radio.Group>
         )}
       </Form.Item>
+        <FormItem {...formItemLayout} label="解答">
+            {getFieldDecorator("questionExplain", {
+                initialValue: initValue.questionStem
+            })(<Input.TextArea placeholder="请输入解答" />)}
+        </FormItem>
       <FormItem {...formItemLayout} label="分值">
         {getFieldDecorator("point", {
           initialValue: initValue.point
@@ -133,6 +138,11 @@ export const JudgementQuestion = ({ getFieldDecorator, initValue = {} }) => (
         </Radio.Group>
       )}
     </Form.Item>
+      <FormItem {...formItemLayout} label="解答">
+          {getFieldDecorator("questionExplain", {
+              initialValue: initValue.questionStem
+          })(<Input.TextArea placeholder="请输入解答" />)}
+      </FormItem>
     <FormItem {...formItemLayout} label="分值">
       {getFieldDecorator("point", {
         initialValue: initValue.point
@@ -162,6 +172,11 @@ export const CompletionQuestion = ({ getFieldDecorator, initValue = {} }) => (
         initialValue: initValue.questionAnswer
       })(<Input placeholder="答案" />)}
     </Form.Item>
+      <FormItem {...formItemLayout} label="解答">
+          {getFieldDecorator("questionExplain", {
+              initialValue: initValue.questionStem
+          })(<Input.TextArea placeholder="请输入解答" />)}
+      </FormItem>
     <FormItem {...formItemLayout} label="分值">
       {getFieldDecorator("point", {
         initialValue: initValue.point
@@ -191,6 +206,11 @@ export const AnswerQuestion = ({ getFieldDecorator, initValue = {} }) => (
         initialValue: initValue.questionAnswer
       })(<Input.TextArea placeholder="答案" />)}
     </Form.Item>
+      <FormItem {...formItemLayout} label="解答">
+          {getFieldDecorator("questionExplain", {
+              initialValue: initValue.questionStem
+          })(<Input.TextArea placeholder="请输入解答" />)}
+      </FormItem>
     <FormItem {...formItemLayout} label="分值">
       {getFieldDecorator("point", {
         initialValue: initValue.point

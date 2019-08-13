@@ -44,7 +44,8 @@ class QuestionAdd extends React.Component {
         },
         questionAudio: JSON.stringify({ address: questionAudio }),
         answer: values.questionAnswer,
-        point: values.point
+        point: values.point,
+        questionExplain: values.questionExplain
       };
       this.addQuestion(params);
     });
